@@ -1,6 +1,6 @@
 package carballo.jesus.equipo5
 
-class Product (var name: String,
+class Producto (var name: String,
                var image: Int,
                var description: String,
                var price: Double)

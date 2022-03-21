@@ -22,6 +22,8 @@
         android:layout_marginTop="300dp"
         android:text="Menu"
         android:layout_gravity="center"
+        android:background="@color/red"
+        android:textColor="@color/white"
         />
 
 </LinearLayout>

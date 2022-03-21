@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class ProductosActivity : AppCompatActivity() {
 
-    var menu: ArrayList<Product> = ArrayList<Product>()
+    var menu: ArrayList<Producto> = ArrayList<Producto>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -35,94 +35,95 @@ class ProductosActivity : AppCompatActivity() {
         when(option)
         {
             "sideOrders" -> {
-                //titulo.setImageResource(R.drawable.hotdrinks)
-                menu.add(Product("Chips Salsa", R.drawable.chips_salsa, "Coffee drink made with espresso and steamed milk", 6.0))
-                menu.add(Product("Flour Tacos", R.drawable.flour_tacos, "Heated drink consisting of shaved chocolate, topped with marshmallows.", 5.0))
-                menu.add(Product("Side Beans", R.drawable.side_beans, "Full-flavored, concentrated form of coffee.", 4.0))
-                menu.add(Product("Side Guacamole", R.drawable.side_guacamole, "Spiced tea concentrate with milk", 6.0))
-                menu.add(Product("Side Rice", R.drawable.side_rice, "A cappuccino is an espresso-based coffee drink, prepared with steamed foam.", 7.0))
+                titulo.setImageResource(R.drawable.side_guacamole)//checar
+                menu.add(Producto("Chips Salsa", R.drawable.chips_salsa, " ", 2.25))
+                menu.add(Producto("Flour Tacos", R.drawable.flour_tacos, " ", 2.99))
+                menu.add(Producto("Side Beans", R.drawable.side_beans, " ", 1.99))
+                menu.add(Producto("Side Guacamole", R.drawable.side_guacamole, " ", 3.75))
+                menu.add(Producto("Side Rice", R.drawable.side_rice, " ", 1.99))
             }
 
             "antojitos" -> {
                 //titulo.setImageResource(R.drawable.antojitos)
-                menu.add(Product("Gringa", R.drawable.gringa, "Caramel syrup meets coffee, milk and ice and whipped cream and buttery caramel sauce layer the love on top.", 5.00))
-                menu.add(Product("Huaraches", R.drawable.huaraches, "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash.", 6.00))
-                menu.add(Product("Quesadillas", R.drawable.quesadillas, "Created by steeping medium-to-coarse ground coffee in room temperature water for 12 hours or longer.", 3.00))
-                menu.add(Product("Sincronizadas", R.drawable.sincronizadas, "Leafy taste of matcha green tea powder with creamy milk and a little sugar for a flavor balance that will leave you feeling ready and raring to go.", 4.00))
-                menu.add(Product("Sopes", R.drawable.sopes, "Chocolate ice cream, and oreo cookies. Topped with whipped cream with cocoa and chocolate syrup.", 7.00))
-                menu.add(Product("Tostadas", R.drawable.tostadas, "Vanilla ice cream, mixed with peanut butter and chocolate.", 7.00))
+                menu.add(Producto("Gringa", R.drawable.gringa, " Tortilla de harina con queso, carne al pastor y piña. Flour torilla with cheese marinated pork and pineapple", 6.47))
+                menu.add(Producto("Huaraches", R.drawable.huaraches, "Tortilla gruesa con frijoles, tu carne favorita, lechuga, queso fresco y crema. Big thick tortilla with beans, your choice of meat, fresh cheese, and sour cream ", 9.87))
+                menu.add(Producto("Quesadillas", R.drawable.quesadillas, "Rellenas con su carne favorita, servidas con ensalada. Filled with your choice of met, served with salad. ", 4.75))
+                menu.add(Producto("Sincronizadas", R.drawable.sincronizadas, "Tortilla de harina rellena con queso y jamon. Se sirve con lechuga, crema y guacamole. Sandwich of two four tortillas filled with ham and cheese. Served with lettuce, source cream, and guacamole. ", 6.99))
+                menu.add(Producto("Sopes", R.drawable.sopes, "Tortilla gruesa cubierta de frijoles, tu carne favorita, lechuga, queso fresco y crema Fried thick tortilla with beans, your choice of meat, lettuce, fresh cheese, sour cream and tomatoes ", 3.39))
+                menu.add(Producto("Tostadas", R.drawable.tostadas, "Tortilla frita con frijoles, tu carne favorita, lechuga, queso fresco, crema y jitomate Fried tortilla with beans, your choice of meat, lettuce, fresh cheese, sour cream and tomatoes ", 3.55))
             }
 
             "sopas" -> {
                 //titulo.setImageResource(R.drawable.sweets)
-                menu.add(Product("Caldo de Camarón", R.drawable.caldo_camaron, "Vanilla cake flavor, topped with cheese topping and blueberries.", 6.0))
-                menu.add(Product("Caldo de Res", R.drawable.caldo_res, "Chocolate cupcakes topped with butter cream and cherries", 3.0))
-                menu.add(Product("Coctel de Camarón", R.drawable.coctel_camaron, "Pastry shell with a lemon flavored filling", 4.0))
-                menu.add(Product("Menudo", R.drawable.menudo, "Soft, moist, buttery cake topped with an easy cream cheese frosting.", 6.0))
-                menu.add(Product("Pozole", R.drawable. pozole, "This cherry topped cheesecake is positively creamy and delicious and will be your new favorite dessert.", 7.0))
-                menu.add(Product("Sopa Mariscos", R.drawable.sopa_mariscos, "Coffee-flavored Italian dessert", 6.0))
+                menu.add(Producto("Caldo de Camarón", R.drawable.caldo_camaron, "Shrimp soup ", 10.69))
+                menu.add(Producto("Caldo de Res", R.drawable.caldo_res,  " ", 5.99))
+                menu.add(Producto("Coctel de Camarón", R.drawable.coctel_camaron, "Shrimp cocktail ", 13.50))
+                menu.add(Producto("Menudo", R.drawable.menudo, "Wednesday to Sunday ", 5.99))
+                menu.add(Producto("Pozole", R.drawable. pozole, "Weekends only ", 5.99))
+                menu.add(Producto("Sopa Mariscos", R.drawable.sopa_mariscos, "Seafood soup ", 15.75))
             }
 
             "tortas" -> {
                 //titulo.setImageResource(R.drawable.salties)
-                menu.add(Product("Torta", R.drawable.torta, "A delicious sandwich served with french fries.", 5.0))
-                menu.add(Product("Mexican Torta", R.drawable.mexican_torta, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
-                menu.add(Product("Torta Cubana", R.drawable.torta_cubana, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
-                menu.add(Product("Torta Milanesa", R.drawable. torta_milanesa, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
-                menu.add(Product("Torta Mixta", R.drawable. tortamixta, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
+                menu.add(Producto("Torta Regular", R.drawable.torta, "All tortas come with lettuce, onions, tomatoes, avocado do, sour cream, mayo, jalapeno pepper and your choice of meat.", 10.95))
+                menu.add(Producto("Mexican Torta", R.drawable.mexican_torta, "Bolillo bread sandwich with your choice of filling. Topped with Lettuce, tomatoes, onions, and avocado.", 6.89))
+                menu.add(Producto("Torta Cubana", R.drawable.torta_cubana, "Chorizo, asada, jamon, pastor y queso Mexican sausage, steak, marinated pork, ham, and cheese",12.35))
+                menu.add(Producto("Torta Milanesa", R.drawable. torta_milanesa, "Breaded Steak or Chicken", 11.99))
+                menu.add(Producto("Torta Mixta", R.drawable. tortamixta, " Chorizo, asada y pastor Mexican sausage, steak and marinated pork",  11.99))
             }
 
             "tacos" -> {
-                //titulo.setImageResource(R.drawable.salties)
-                menu.add(Product("Taco Pescado", R.drawable.taco_pescado, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
-                menu.add(Product("Tacos", R.drawable.tacos, "A delicious sandwich served with french fries.", 5.0))
+                menu.add(Producto("Taco Pescado", R.drawable.taco_pescado, "Fish taco ", 2.35))
+                menu.add(Producto("Tacos", R.drawable.tacos, " Traditional Taco", 2.35))
             }
 
             "combinations" -> {
-                //titulo.setImageResource(R.drawable.salties)
-                menu.add(Product("Burrito Pepe", R.drawable.burrito_pepe, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
-                menu.add(Product("Cinco", R.drawable.cinco, "A delicious sandwich served with french fries.", 5.0))
-                menu.add(Product("Dos amigos", R.drawable.dos_amigos, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
-                menu.add(Product("Mexican Burritos", R.drawable. mexican_burritos, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
-                menu.add(Product("Portales Burritos", R.drawable. portales_burritos, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Taco Combo", R.drawable. taco_combo, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
+
+                menu.add(Producto("Burrito Pepe", R.drawable.burrito_pepe, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
+                menu.add(Producto("Cinco", R.drawable.cinco, "A delicious sandwich served with french fries.", 5.0))
+                menu.add(Producto("Dos amigos", R.drawable.dos_amigos, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
+                menu.add(Producto("Mexican Burritos", R.drawable. mexican_burritos, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
+                menu.add(Producto("Portales Burritos", R.drawable. portales_burritos, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
+                menu.add(Producto("Taco Combo", R.drawable. taco_combo, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
+            }
+            "caldos" ->{
+                menu.add(Producto("Larger",R.drawable.caldo_larger,"",10.99))
+                menu.add(Producto("Camaron",R.drawable.caldo_camaron,"",11.99))
             }
 
             "especialidades" -> {
-                //titulo.setImageResource(R.drawable.salties)
-                menu.add(Product("Botana de Camarones", R.drawable.botana_camarones, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
-                menu.add(Product("Coctel de Camarón", R.drawable.coctel_camaron, "A delicious sandwich served with french fries.", 5.0))
-                menu.add(Product("Fajita Burrito", R.drawable.fajita_burrito, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
-                menu.add(Product("Fajita Quesadilla", R.drawable. fajita_quesadilla, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
-                menu.add(Product("Mojarra Frita", R.drawable. mojarra_frita, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Tostada Ceviche", R.drawable. tostada_ceviche, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
+                menu.add(Producto("Botana de Camarones", R.drawable.botana_camarones, " ", 17.99))
+                menu.add(Producto("Coctel de Camarón", R.drawable.coctel_camaron, " ", 14.50))
+                menu.add(Producto("Fajita Burrito", R.drawable.fajita_burrito, "Gran burrito relleno de tu carne favorita, cebolla, chile, arroz, frijoles y jitomate. Servido con lechuga y guacamole Large burrito filled with your choice of meat, onions, chile, peppers, rice, beans and tomatoes. Served with lettuce guacamole and sour cream.", 11.79))
+                menu.add(Producto("Fajita Quesadilla", R.drawable. fajita_quesadilla, "Quesadilla extra grande, rellena con tu carne favorita, cebolla asada, chile banana y jitomate. Servida con arroz, frijoles y ensalada Extra large quesadilla with your choice of meat, cooked with grilled onions, banana peppers and tomatoes. Served with rice beans and salad.", 12.49))
+                menu.add(Producto("Mojarra Frita", R.drawable. mojarra_frita, "Tilapia frita servida con lechiga, cebolla, jitomate, aguacate y tortillas. Agregue arroz y frijoles por $1.50 adicinales Fried tilapia served with lettuce, onions, tomatoes, avocado and tortillas. Add rice and beans for $1.50 extra. ",  14.49))
+                menu.add(Producto("Tostada Ceviche", R.drawable. tostada_ceviche, "Tilapia, camarones y pico de gallo servido en una crujiente tostada Tilapia, Shrimp and pico de gallo, served on a crispy shell",  2.99))
             }
 
             "bebidas" -> {
-                //titulo.setImageResource(R.drawable.salties)
-                menu.add(Product("Aguas Frescas", R.drawable.aguas_frescas, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
-                menu.add(Product("Caguama", R.drawable.caguama, "A delicious sandwich served with french fries.", 5.0))
-                menu.add(Product("Caguama Michelada", R.drawable.caguama_michelada, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
-                menu.add(Product("Charolazo", R.drawable. charolazo, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
-                menu.add(Product("Cubetazo", R.drawable. cubetazo, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Cubetazos", R.drawable. cubetazos, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Domestic Beer", R.drawable.domestic_beer, "Fine crepes stuffed with Alfredo chicken, spinach and mushrooms.", 6.0))
-                menu.add(Product("Jarritos", R.drawable.jarritos, "A delicious sandwich served with french fries.", 5.0))
-                menu.add(Product("La Mamalona", R.drawable.la_mamalona, "Sandwich made with Italian bread  served warmed by grilling.", 4.0))
-                menu.add(Product("La Mamalona con Camarones", R.drawable. lamamalona_camarones, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6.0))
-                menu.add(Product("Lata Beer", R.drawable. lata_beer, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Mexican Beer", R.drawable. mexican_beer, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Michelada", R.drawable. michelada, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
-                menu.add(Product("Sodas", R.drawable. sodas, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7.0))
+                menu.add(Producto("Aguas Frescas", R.drawable.aguas_frescas, "", 2.75))
+                menu.add(Producto("Caguama", R.drawable.caguama, "", 7.99))
+                menu.add(Producto("Caguama Michelada", R.drawable.caguama_michelada, "", 10.99))
+                menu.add(Producto("Charolazo", R.drawable. charolazo, "", 15.75))
+                menu.add(Producto("Cubetazo", R.drawable. cubetazo, "",  21.99))
+                menu.add(Producto("Cubetazos", R.drawable. cubetazos, "",  19.99))
+                menu.add(Producto("Domestic Beer", R.drawable.domestic_beer, "", 3.55))
+                menu.add(Producto("Jarritos", R.drawable.jarritos, "", 2.35))
+                menu.add(Producto("La Mamalona", R.drawable.la_mamalona, "(Michelada 2 Cervezas)", 12.99))
+                menu.add(Producto("La Mamalona con Camarones", R.drawable. lamamalona_camarones, "", 14.99))
+                menu.add(Producto("Lata Beer", R.drawable. lata_beer, "",  2.99))
+                menu.add(Producto("Mexican Beer", R.drawable. mexican_beer, "",  3.99))
+                menu.add(Producto("Michelada", R.drawable. michelada, "",  6.75))
+                menu.add(Producto("Sodas", R.drawable. sodas, "",  2.75))
             }
         }
     }
 
     private class AdaptadorProductos: BaseAdapter {
-        var productos = ArrayList<Product>()
+        var productos = ArrayList<Producto>()
         var contexto: Context?=null
 
-        constructor(contexto: Context, productos: ArrayList<Product>){
+        constructor(contexto: Context, productos: ArrayList<Producto>){
             this.productos = productos
             this.contexto = contexto
         }

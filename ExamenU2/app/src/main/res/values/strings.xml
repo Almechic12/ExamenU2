@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">ExamenU2</string>
+
+    <string name="our_menu">Nuestro menú</string>
+
+    <string name="tacos">Tacos</string>
+    <string name="antojitos">Antojitos</string>
+    <string name="especialidades">Gorditas</string>
+    <string name="caldos">Caldos</string>
+    <string name="combination">Combination</string>
+    <string name="tortas">Tortas</string>
+    <string name="sopas">Sopas</string>
+    <string name="sideorders">Side Orders</string>
+    <string name="bebidas">Bebidas - Drinks</string>
+
 </resources>
