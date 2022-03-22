@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class Menu: AppCompatActivity() {
+class MenuActivity: AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.menu)
+        setContentView(R.layout.activity_menu)
 
         var btnTacos: Button = findViewById(R.id.button_tacos) as Button
         var btnAntojitos: Button = findViewById(R.id.button_antojitos) as Button
@@ -23,47 +23,47 @@ class Menu: AppCompatActivity() {
         var btnBebidas: Button = findViewById(R.id.button_bebidas) as Button
 
         btnTacos.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "tacos")
             startActivity(intent)
         }
         btnAntojitos.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "antojitos")
             startActivity(intent)
         }
         btnEspecialdades.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "especialidades")
             startActivity(intent)
         }
         btnCaldos.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "caldos")
             startActivity(intent)
         }
         btnCombination.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "combination")
             startActivity(intent)
         }
         btnTortas.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "tortas")
             startActivity(intent)
         }
         btnSopas.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "sopas")
             startActivity(intent)
         }
         btnSideorders.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "sideOrders")
             startActivity(intent)
         }
         btnBebidas.setOnClickListener{
-            var intent: Intent = Intent( this, Producto:: class.java)
+            var intent: Intent = Intent( this, ProductosActivity:: class.java)
             intent.putExtra("menuType", "bebidas")
             startActivity(intent)
         }

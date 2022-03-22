@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
-import android.widget.ImageView
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 class ProductosActivity : AppCompatActivity() {
@@ -28,6 +25,13 @@ class ProductosActivity : AppCompatActivity() {
 
 
         listView.adapter = adaptador
+
+        //Obtener que item de la lista seleccionamos listView (Ejemplo de práctica Pelicula)
+        listView.setOnItemClickListener { adapterView, View, i, l ->
+            Toast.makeText(applicationContext,"Seleccionado"+menu[i].name + menu[i].price,Toast.LENGTH_SHORT).show()
+            //Cantidad descripcion precio
+            // sum precio*can
+        }
     }
 
     fun agregarProductos(option: String?){
