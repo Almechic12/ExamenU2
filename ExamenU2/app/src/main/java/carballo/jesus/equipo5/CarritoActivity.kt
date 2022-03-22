@@ -23,7 +23,15 @@ class CarritoActivity : AppCompatActivity() {
 
         listView.adapter = adaptador
 
+        var total : TextView=findViewById(R.id.total) as TextView
+        var asd:Double=0.0
+        for (i in listaCarrito.indices){
+
+            asd =+ listaCarrito[i].cantidad * listaCarrito[i].price
+        }
+        total.setText(asd.toString())
     }
+
 
     private class AdaptadorCarrito(contexto: Context, var carrito: ArrayList<Carrito>) :
         BaseAdapter() {
@@ -56,6 +64,8 @@ class CarritoActivity : AppCompatActivity() {
             nombre.setText(carr.name)
             cantidad.setText("1")
             precio.setText("$${carr.price}")
+
+
             return vista
         }
     }

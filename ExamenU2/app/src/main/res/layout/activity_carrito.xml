@@ -18,6 +18,30 @@
     <ListView
         android:id="@+id/litView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="454dp" />
+
+    <TextView
+        android:id="@+id/litViewP"
+        android:layout_width="271dp"
+        android:layout_height="77dp"
+        android:gravity="right"
+        android:text="Total a pagar: "
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="left"/>
+
+    <Button
+        android:id="@+id/btn_pagar"
+        android:layout_width="170dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:text="Pagar"
+        android:textSize="16sp" />
+
 
 </LinearLayout>
