@@ -1,6 +1,8 @@
 package carballo.jesus.equipo5
 
 import android.content.Context
+import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 class ProductosActivity : AppCompatActivity() {
 
     var menu: ArrayList<Producto> = ArrayList<Producto>()
+    var carrito: ArrayList<Carrito> = ArrayList<Carrito>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -23,14 +26,20 @@ class ProductosActivity : AppCompatActivity() {
         var listView: ListView = findViewById(R.id.litView) as ListView
         var adaptador = AdaptadorProductos(this, menu)
 
+        var btn_carrito: ImageView = findViewById(R.id.btn_carrito) as ImageView
 
         listView.adapter = adaptador
 
         //Obtener que item de la lista seleccionamos listView (Ejemplo de práctica Pelicula)
         listView.setOnItemClickListener { adapterView, View, i, l ->
-            Toast.makeText(applicationContext,"Seleccionado"+menu[i].name + menu[i].price,Toast.LENGTH_SHORT).show()
-            //Cantidad descripcion precio
-            // sum precio*can
+            Toast.makeText(applicationContext,"Seleccionado "+menu[i].name + " " + menu[i].price,Toast.LENGTH_SHORT).show()
+            carrito.add(Carrito(menu[i].name, menu[i].image, 1, menu[i].price))
+        }
+
+        btn_carrito.setOnClickListener{
+            var intent: Intent = Intent( this, CarritoActivity:: class.java)
+            intent.putExtra("carrito", carrito)
+            startActivity(intent)
         }
     }
 
