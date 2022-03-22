@@ -34,29 +34,31 @@
 
         <Button
             android:id="@+id/button_tacos"
-            android:text="@string/tacos"
-            android:textColor="@color/white"
+            android:layout_height="72dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="2dp"
             android:background="@color/red"
             android:paddingHorizontal="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:textSize="15dp"
             android:paddingVertical="20dp"
-            />
+            android:text="@string/tacos"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
         <Button
             android:id="@+id/button_antojitos"
-            android:text="@string/antojitos"
-            android:textColor="@color/white"
+            android:layout_height="20dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="2dp"
             android:background="@color/red"
             android:paddingHorizontal="20dp"
-            android:layout_marginTop="2dp"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:textSize="15dp"
             android:paddingVertical="20dp"
-            />
+            android:text="@string/antojitos"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
         <Button
             android:id="@+id/button_especialidades"
@@ -68,7 +70,7 @@
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="15dp"
-            android:paddingVertical="20dp"
+            android:paddingVertical="10dp"
             />
 
         <Button

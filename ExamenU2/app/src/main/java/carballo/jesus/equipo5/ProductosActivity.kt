@@ -43,6 +43,7 @@ class ProductosActivity : AppCompatActivity() {
         }
     }
 
+
     fun agregarProductos(option: String?){
         var titulo = findViewById(R.id.titulo) as ImageView
         when(option)
