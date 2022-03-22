@@ -44,7 +44,7 @@ class Menu: AppCompatActivity() {
         }
         btnCombination.setOnClickListener{
             var intent: Intent = Intent( this, Producto:: class.java)
-            intent.putExtra("menuType", "combination")
+            intent.putExtra("menuType", "combinations")
             startActivity(intent)
         }
         btnTortas.setOnClickListener{
