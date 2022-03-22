@@ -28,49 +28,48 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="1"
+        android:columnCount="2"
         android:layout_marginTop="20dp"
         android:paddingHorizontal="50dp">
 
         <Button
             android:id="@+id/button_tacos"
-            android:layout_height="72dp"
-            android:layout_row="0"
-            android:layout_column="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
+            android:layout_marginRight="2dp"
             android:layout_marginTop="2dp"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:paddingVertical="20dp"
             android:text="@string/tacos"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/button_antojitos"
-            android:layout_height="20dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
+            android:layout_marginRight="2dp"
             android:layout_marginTop="2dp"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:paddingVertical="20dp"
             android:text="@string/antojitos"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/button_especialidades"
             android:text="@string/especialidades"
             android:textColor="@color/white"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
+            android:layout_marginRight="2dp"
             android:layout_marginTop="2dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
-            android:textSize="15dp"
-            android:paddingVertical="10dp"
+            android:textSize="15sp"
+            android:paddingVertical="20dp"
             />
 
         <Button
@@ -78,11 +77,12 @@
             android:text="@string/caldos"
             android:textColor="@color/white"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:paddingVertical="20dp"
             />
 
@@ -91,11 +91,12 @@
             android:text="@string/combination"
             android:textColor="@color/white"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:paddingVertical="20dp"
             />
 
@@ -106,22 +107,24 @@
             android:layout_gravity="fill_horizontal"
             android:layout_marginTop="2dp"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:paddingVertical="20dp"
+            android:layout_marginRight="2dp"
             android:text="@string/tortas"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/button_sopas"
             android:text="@string/sopas"
             android:textColor="@color/white"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:paddingVertical="20dp"
             />
 
@@ -130,11 +133,12 @@
             android:text="@string/sideorders"
             android:textColor="@color/white"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:paddingVertical="20dp"
             />
 
@@ -143,11 +147,12 @@
             android:text="@string/bebidas"
             android:textColor="@color/white"
             android:background="@color/red"
-            android:paddingHorizontal="20dp"
+
             android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:paddingVertical="20dp"
             />
 

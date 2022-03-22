@@ -18,18 +18,18 @@ class CarritoActivity : AppCompatActivity() {
 
         var listaCarrito: ArrayList<Carrito> = intent.getSerializableExtra("carrito") as ArrayList<Carrito>
 
+
         var adaptador = AdaptadorCarrito(this, listaCarrito)
         var listView: ListView = findViewById(R.id.litView) as ListView
 
         listView.adapter = adaptador
 
         var total : TextView=findViewById(R.id.total) as TextView
-        var asd:Double=0.0
+        var asd: Double = 0.0
         for (i in listaCarrito.indices){
-
-            asd =+ listaCarrito[i].cantidad * listaCarrito[i].price
+            asd += (listaCarrito[i].cantidad * listaCarrito[i].price)
         }
-        total.setText(asd.toString())
+        total.setText("$" + asd.toString())
     }
 
 
